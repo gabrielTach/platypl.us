@@ -1,0 +1,19 @@
+{% include header.html %}
+	{% include navbar.html %}
+	<main class="container">
+		<div class="row">
+			<div class="col-4">
+				{% if page.toc != "" and page.toc != nil %}
+					<h1>Chapters</h1>
+					{% toc %}
+				{% endif %}
+				{% if page.hero != "" and page.hero != nil %}
+					<img class="img-fluid" src="{{ 'assets/img/documents/' | append: page.hero | relative_url}}" alt="">
+				{% endif %}
+			</div>
+			<div class="col-8 chapter-content">
+				{{ content }}
+			</div>
+		</div>
+	</main>
+{% include footer.html %}

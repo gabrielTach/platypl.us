@@ -1,0 +1,21 @@
+{% include header.html %}
+	{% include navbar.html %}
+	<main class="container" style="padding: 1.5em;">
+		<div class="row">
+			{% for document in site.documents %}
+				<div class="col-lg-4">
+					<div class="card">
+						{% if document.hero != "" and document.hero != nil %}
+							<img class="card-img-top" src="{{ 'assets/img/documents/' | append: document.hero | relative_url}}" alt="">
+						{% endif %}
+						<div class="card-body">
+							<h5 class="card-title">{{ document.title }}</h5>
+							<p class="card-text">{{ document.summary }}</p>
+							<a href="{{ document.url }}" title="Read {{ document.title }}" class="btn btn-dark">Read</a>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</main>
+{% include footer.html %}

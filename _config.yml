@@ -1,0 +1,28 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+title: "Platy+ - Event ticket & registration system" # the name of your site, e.g. ACME Corp.
+
+# Plugin
+plugins:
+  - jekyll-toc
+
+# Build settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Documentation
+collections:
+  documents:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "documents"
+    values:
+      layout: "chapter"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

@@ -1,0 +1,14 @@
+---
+---
+// Custom variables for bootstrap
+$font-family-sans-serif: Montserrat, Roboto, Arial, sans-serif !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+$headings-font-family: Pattaya, $font-family-sans-serif;
+
+// Then import bootstrap
+@import "bootstrap/bootstrap";
+
+// Then import platyplus style
+@import "platyplus/platyplus";
