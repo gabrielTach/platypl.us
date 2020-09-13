@@ -1,0 +1,42 @@
+name: Generate the website
+
+# Trigger website update on tagging 
+on:
+  create:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+*'
+jobs:
+  Generate:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout - clone the repository
+      uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+    - name: Cache - shorten the build time
+      uses: actions/cache@v1
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+    - name: Jekyll-action - generate the website
+      uses: helaili/jekyll-action@2.0.4
+      env:
+        JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+      with:
+        target_branch: 'deployment'
+    - name: Clean
+      run: sudo rm -rf * .* || true
+    - name: Checkout - clone the repository
+      uses: actions/checkout@v2.1.0
+      with:
+        ref: deployment
+        fetch-depth: 2
+    - name: FTP-Deploy-Action - deploy the website
+      uses: SamKirkland/FTP-Deploy-Action@3.1.0
+      with:
+        ftp-server: ftp.cluster015.hosting.ovh.net
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        git-ftp-args: --remote-root /platyplus/www --branch deployment
