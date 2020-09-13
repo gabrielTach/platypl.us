@@ -1,6 +1,6 @@
-name: Generate the website
+name: Deploy to platypl.us
 
-# Trigger website update on tagging 
+# Trigger website update on tagging
 on:
   create:
     tags:
@@ -26,6 +26,7 @@ jobs:
         JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
       with:
         target_branch: 'deployment'
+    # Jekyll actions leaves some files that can't be removed by checkpo
     - name: Clean
       run: sudo rm -rf * .* || true
     - name: Checkout - clone the repository
@@ -36,7 +37,7 @@ jobs:
     - name: FTP-Deploy-Action - deploy the website
       uses: SamKirkland/FTP-Deploy-Action@3.1.0
       with:
-        ftp-server: ftp.cluster015.hosting.ovh.net
+        ftp-server: ${{ secrets.FTP_SERVER }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         git-ftp-args: --remote-root /platyplus/www --branch deployment

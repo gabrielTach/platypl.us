@@ -1,24 +1,23 @@
 # Platypl.us
 
-The static website for the registration System Platy+.
+![](https://github.com/gabrielTach/platypl.us/blob/master/assets/img/platypus%20-%20John%20Sherer.png?raw=true)
 
+The static website for the registration System Platy+. You can visit it at [platyp.us](https://platyp.us)
 
-# Requirements
+Platy+'s website uses Jekyll to generate the static pages and [Bootstrap 4](https://getbootstrap.com) as CSS framework.
 
-The generation of the website requires Ruby (2.7+) and [Jekyll](jekyllrb.com) to be installed
+## Requirements
 
-# CSS
+The generation of the website requires __Ruby (2.7+)__ and __[Jekyll](jekyllrb.com)__.
 
-Platy+ uses Bootstrap 4+ as css framework.
+## How to
 
-# How to
+### Development
 
-## Development
-
-Once Jekyll installed, run `jekyll serve` and go to with your favorite browser
+Once Jekyll installed, run `jekyll serve` and then hit it with your favorite browser
 [127.0.0.1:4000](http://127.0.0.1:4000).
 
-## Build
+### Build
 
 To build the website, run `jekyll build`. All the files will then be available
 in `./_site`
