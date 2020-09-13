@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>User Guide - Platy+ - Event ticket & registration system</title>
+		<meta name="description" content="Platyplus is a convention registration system that exists since 2017">
+		<!--Open Graph tags-->
+		<meta name="og:title" property="og:title" content="Platy+, a convention registration system">
+		<meta name="og:description" property="og:description" content="Platyplus is a convention registration system that exists since 2017.">
+		<meta name="og:image" property="og:image" content="https://platypl.us/assets/images/platypus%20-%20John%20Sherer.og.jpg">
+		<meta name="og:image:width" property="og:image:width" content="800">
+		<meta name="og:image:height" property="og:image:height" content="800">
+		<meta name="og:type" property="og:type" content="website">
+		<meta name="og:locale" property="og:locale" content="en_US">
+		<meta name="og:url" property="og:url" content="https://platypl.us">
+		<!--Twitter card-->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Platy+, a registration system">
+		<meta name="twitter:description" content="Platyplus is a convention registration system that exists since 2017.">
+		<meta name="twitter:image" content="https://platypl.us/assets/images/platypus%20-%20John%20Sherer.twitter.png">
+
+		<!--robots-->
+		<meta name="robots" content="index, follow">
+
+		<!--Icons-->
+		<link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900|Pattaya">
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Platyplus+</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="/documentation" id="navbarDropdown" role="button">
+          Documentation
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<main class="container">
+		<div class="row">
+			<div class="col-4">
+				
+					<h1>Chapters</h1>
+					<ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#administration-interface">Administration Interface</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#main-page">Main page</a></li>
+<li class="toc-entry toc-h2"><a href="#attendees">Attendees</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#attendees-list">Attendees List</a></li>
+<li class="toc-entry toc-h3"><a href="#manually-add-an-attendee">Manually add an attendee</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#download-a-csv-with-the-attendees-information">Download a CSV with the attendees information</a></li>
+<li class="toc-entry toc-h2"><a href="#registration-configuration">Registration configuration</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#convention">Convention</a></li>
+<li class="toc-entry toc-h3"><a href="#dates">Dates</a></li>
+<li class="toc-entry toc-h3"><a href="#profile-page">Profile Page</a></li>
+<li class="toc-entry toc-h3"><a href="#registration-page">Registration Page</a></li>
+<li class="toc-entry toc-h3"><a href="#payment-methods">Payment Methods</a></li>
+<li class="toc-entry toc-h3"><a href="#invoices">Invoices</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#registration">Registration</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#registration-steps">Registration Steps</a></li>
+<li class="toc-entry toc-h3"><a href="#registration-process">Registration Process</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#groups-rights">Groups rights</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#rights">Rights</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#forms">Forms</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#edit-a-form">Edit a form</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#form">Form</a></li>
+<li class="toc-entry toc-h4"><a href="#rules">Rules</a></li>
+<li class="toc-entry toc-h4"><a href="#preview">Preview</a></li>
+<li class="toc-entry toc-h4"><a href="#data-access">Data Access</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#results">Results</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#badges">Badges</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#badge-editor">Badge editor</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#characteristics">Characteristics</a></li>
+<li class="toc-entry toc-h4"><a href="#conditions">Conditions</a></li>
+<li class="toc-entry toc-h4"><a href="#fields">Fields</a></li>
+<li class="toc-entry toc-h4"><a href="#download-badges">Download badges</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#documents-models">Documents models</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#preview-1">Preview</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#booking">Booking</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#booking-and-tickets">Booking and Tickets</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#unassigned-spots">Unassigned spots</a></li>
+<li class="toc-entry toc-h3"><a href="#download-a-csv-with-the-bookings">Download a CSV with the bookings</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#orders">Orders</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#orders-1">Orders</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#download-csv">Download CSV</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#transactions">Transactions</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#download-csv-1">Download CSV</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#events">Events</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#news">News</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#add-a-piece-of-news">Add a piece of news</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#mass-emails">Mass Emails</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#sending-an-email">Sending an email</a></li>
+<li class="toc-entry toc-h3"><a href="#email-sending-conditions">Email sending conditions</a></li>
+<li class="toc-entry toc-h3"><a href="#email-models">Email models</a></li>
+<li class="toc-entry toc-h3"><a href="#scheduled-mails">Scheduled mails</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#system">System</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#updates">Updates</a></li>
+<li class="toc-entry toc-h3"><a href="#maintenance-modes">Maintenance modes</a></li>
+<li class="toc-entry toc-h3"><a href="#version">Version</a></li>
+<li class="toc-entry toc-h3"><a href="#translations">Translations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#attendees-interface">Attendee’s interface</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#profile">Profile</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#changing-password">Changing password</a></li>
+<li class="toc-entry toc-h3"><a href="#double-authentication">Double authentication</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#how-to">How to</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#attendees-1">Attendees</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#cancel-an-invoice">Cancel an invoice</a></li>
+<li class="toc-entry toc-h3"><a href="#create-a-user">Create a user</a></li>
+<li class="toc-entry toc-h3"><a href="#generate-a-quote">Generate a quote</a></li>
+<li class="toc-entry toc-h3"><a href="#manually-create-an-invoice">Manually create an invoice</a></li>
+<li class="toc-entry toc-h3"><a href="#delete-a-user">Delete a user</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#during-the-event">During the event</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#tech-set-up">Tech set up</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#setup-the-local-wifiethernet-network">Setup the local WiFi/Ethernet network</a></li>
+<li class="toc-entry toc-h3"><a href="#setup-the-registration-desks">Setup the registration desks</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#troubleshooting">Troubleshooting</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#there-is-no-internet-access">There is no Internet Access</a></li>
+<li class="toc-entry toc-h3"><a href="#the-local-web-server-diesthe-wifiethernet-connection-fails">The local web server dies/the WiFi/Ethernet connection fails</a></li>
+<li class="toc-entry toc-h3"><a href="#all-the-registration-computers-fail">All the registration computers fail</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#on-site-registration-desk">On site registration desk</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#tips">Tips</a></li>
+<li class="toc-entry toc-h3"><a href="#before-the-convention">Before the convention.</a></li>
+<li class="toc-entry toc-h3"><a href="#during-the-convention">During the convention</a></li>
+<li class="toc-entry toc-h3"><a href="#closing-of-the-registration">Closing of the registration</a></li>
+<li class="toc-entry toc-h3"><a href="#reopening">Reopening</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#troubleshooting-1">Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+				
+				
+					<img class="img-fluid" src="/assets/img/documents/tome%201%20-%200316%20-%20G%C3%A9rard%20Grandville.jpg" alt="">
+				
+			</div>
+			<div class="col-8 chapter-content">
+				<h1 id="administration-interface">Administration Interface</h1>
+
+<h2 id="main-page">Main page</h2>
+
+<p>The main page gives an overview of the last registered users, diverse payment and registration data displayed in charts.</p>
+
+<h2 id="attendees">Attendees</h2>
+
+<h3 id="attendees-list">Attendees List</h3>
+
+<p>To display a list of all the created account, choose in the menu Attendees &gt; Add an attendee.</p>
+
+<p>About the different columns:</p>
+
+<ul>
+  <li>
+    <p><strong>Registration date</strong> is the date on which the account has been created.</p>
+  </li>
+  <li>
+    <p><strong>#</strong> is the user’s regnumber.</p>
+  </li>
+  <li>
+    <p><strong>Name</strong> the name of the attendee.</p>
+  </li>
+  <li>
+    <p><strong>Nick</strong> its nickname. The nickname is not mandatory.</p>
+  </li>
+  <li>
+    <p><strong>Email</strong>. Email adress.</p>
+  </li>
+  <li>
+    <p><strong>Bal</strong>. is the payment balance: a positive balance means that the attendee owes us money. A negative one that we owe money to the attendee.</p>
+  </li>
+  <li>
+    <p><strong>Reg</strong>. if the attendee has been through the registration process, the value of that column will be Y.</p>
+  </li>
+</ul>
+
+<h3 id="manually-add-an-attendee">Manually add an attendee</h3>
+
+<p>To manually add an Attendee, choose in the menu Attendees &gt; Add an attendee.</p>
+
+<p>Fill in the different fields. Be careful to not attribute the wrong User Level (the default one is Attendee, which has no access to the Administration).</p>
+
+<p>About the:</p>
+
+<ul>
+  <li>
+    <p><strong>Registered field</strong>. This field indicates if the user has been through the registration steps and prevents him from going through it again.</p>
+  </li>
+  <li>
+    <p><strong>Custom forms</strong>. This forms might be visible or not from the user’s profile. The forms are created from Attendees &gt; Forms .</p>
+  </li>
+</ul>
+
+<h2 id="download-a-csv-with-the-attendees-information">Download a CSV with the attendees information</h2>
+
+<p>To manually download a CSV with the attendees information, choose in the menu Attendees &gt; Download CSV.</p>
+
+<p>You can select if you want to download only the basic attendees information saved in the system and, if you want:</p>
+
+<ul>
+  <li>
+    <p>Add to it the values entered in the custom forms.</p>
+  </li>
+  <li>
+    <p>Or the tickets (by type or category).</p>
+  </li>
+</ul>
+
+<h2 id="registration-configuration">Registration configuration</h2>
+
+<p>You can set up the opening and closing of the registration page, add a description, activate/deactivate payment methods from the Configuration page. To access to it go to Attendees &gt; Configuration.</p>
+
+<h3 id="convention">Convention</h3>
+
+<p>All the convention information:</p>
+
+<ul>
+  <li>
+    <p><em>Website</em>: the main website (not necessarily the registration website).</p>
+  </li>
+  <li>
+    <p><em>Convention name</em></p>
+  </li>
+  <li>
+    <p><em>Registration email address</em>: this email will appear in all the confirmation emails sent.</p>
+  </li>
+  <li>
+    <p><em>Registration team name</em>: this name will appear in the emails.</p>
+  </li>
+  <li>
+    <p><em>Country</em>: the default country.</p>
+  </li>
+</ul>
+
+<h3 id="dates">Dates</h3>
+
+<p>Different dates can be set up:</p>
+
+<ul>
+  <li>
+    <p><em>Pre-registration opening</em> which allows people to create accounts and go through the pre-registration steps.</p>
+  </li>
+  <li>
+    <p><em>Staff opening</em> which is when the staff is allowed to go through the registration process with the Staff Code.</p>
+  </li>
+  <li>
+    <p><em>Public opening</em> which is when the registration opens for everyone.</p>
+  </li>
+  <li>
+    <p><em>Force Closing</em> forces the closing of the registration for people who don’t have an account yet.</p>
+  </li>
+  <li>
+    <p><em>Close also for users with an account</em>.</p>
+  </li>
+  <li>
+    <p><em>Convention first day</em> indicates when the convention starts, it allows the system to calculate if attendees will have at least 18 years at the event.</p>
+  </li>
+  <li>
+    <p><em>Staff code</em> is the secret code used for the Staff Opening.</p>
+  </li>
+</ul>
+
+<h3 id="profile-page">Profile Page</h3>
+
+<p>You can choose which forms are displayed, if the attendee is allowed to assign his tickets, his room or to upload pictures.</p>
+
+<h3 id="registration-page">Registration Page</h3>
+
+<p>You can modify the text displayed on the Login Page and set the Cart Timeout (in seconds).</p>
+
+<h3 id="payment-methods">Payment Methods</h3>
+
+<p>Screenshot of the payment methods. Note that the system will display if that method is in production or testing mode. Depending on how it has been configured.</p>
+
+<h3 id="invoices">Invoices</h3>
+
+<p>All the information that are displayed on the invoices:</p>
+
+<ul>
+  <li>
+    <p><em>Header</em>: on the top left of the invoice. This usually contains the name, address and VAT number of the company.</p>
+  </li>
+  <li>
+    <p><em>Footer</em>: on the bottom of the invoice, address, bank account information are usually put in there.</p>
+  </li>
+  <li>
+    <p><em>Instructions</em>: extra payment instructions (typically if bank transfers are allowed, how much time the attendee has to pay the invoice).</p>
+  </li>
+</ul>
+
+<h2 id="registration">Registration</h2>
+
+<p>Platy+ allow a non-linear way to register. The registration process is composed of different steps that can be rearranged in different ways.</p>
+
+<h3 id="registration-steps">Registration Steps</h3>
+
+<p>Registration steps are the element of the path that an attendee will have to follow during registration.</p>
+
+<!-- ### Add a registration step
+
+WIP: add the different types of steps. -->
+
+<h3 id="registration-process">Registration Process</h3>
+
+<p>The registration process allows to create the different paths that can be followed by the attendee during his registration. From here you organise the steps. One step can be used more than once.</p>
+
+<p>It all starts from the root, a step that the attendee will not see. You can only add a new step from that point. Then…</p>
+
+<p>Delete: delete that point in the path. All the next points are still preserved and just get closer to the root.</p>
+
+<p>Add step: add a step just after the current step.</p>
+
+<p>Branch: add a step to the right (on the same level).</p>
+
+<p>(Un)mark as step: this step will appear in the breadcrumb.</p>
+
+<p>The ↓ and ↕ buttons indicates if the attendee is, respectively, not allowed to go back or is allowed to go back and forth of the next step. Clicking on it will reverse the rights.</p>
+
+<h2 id="groups-rights">Groups rights</h2>
+
+<p>Users can be assigned to different groups with specific rights on the registration system.</p>
+
+<p>The rights can be found on Attendees &gt; Groups.</p>
+
+<!-- ### Edit a group
+
+WIP. -->
+
+<h3 id="rights">Rights</h3>
+
+<p>Here is a summary of the different rights that can be assigned to groups.</p>
+
+<p>The Super Admin has all the right.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>System name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Admin panel access</td>
+      <td>admin_access</td>
+      <td>Show the admin link and give access to the admin panel.</td>
+    </tr>
+    <tr>
+      <td>Attendees management</td>
+      <td>admin_attendees</td>
+      <td>Allow management of the attendees.</td>
+    </tr>
+    <tr>
+      <td>Rooms management</td>
+      <td>admin_rooms</td>
+      <td>Allow management of the rooms.</td>
+    </tr>
+    <tr>
+      <td>User groups</td>
+      <td>admin_attendees_groups</td>
+      <td>Allow the management of the different user groups.</td>
+    </tr>
+    <tr>
+      <td>Check in</td>
+      <td>admin_checkin</td>
+      <td>Allow to use the checkin/checkout.</td>
+    </tr>
+    <tr>
+      <td>Registration process</td>
+      <td>admin_registration</td>
+      <td>Allow to edit the registration process.</td>
+    </tr>
+    <tr>
+      <td>Events management</td>
+      <td>admin_events</td>
+      <td>Allow to use the events manager.</td>
+    </tr>
+    <tr>
+      <td>News</td>
+      <td>admin_news</td>
+      <td>Allow possibility to edit/write/delete news</td>
+    </tr>
+    <tr>
+      <td>Products</td>
+      <td>admin_products</td>
+      <td>Allow the possibility to create/edit/delete products and their prices.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="forms">Forms</h2>
+
+<p>It is possible to create forms and have them displayed on the user’s profile, during the registration process and also to use them internally (for example keeping track of volunteers). Groups with Registration rights have read and write access to all the forms, but it is possible to give specific rights to specific groups that don’t have the Registration rights.</p>
+
+<p>To access to the forms go to Attendees &gt; Forms.</p>
+
+<p>Forms can be made Visible, Hidden or Read Only for the users.</p>
+
+<h3 id="edit-a-form">Edit a form</h3>
+
+<p>Users with Registration rights can create new forms and edit/remove fields. To create a new form go to Attendees &gt; New Form.</p>
+
+<h4 id="form">Form</h4>
+
+<p>This tab contains all the basic information (name and status) of the form and the different fields (called elements).</p>
+
+<h4 id="rules">Rules</h4>
+
+<p>The rules are going to trigger actions like: display or hide another field/form.</p>
+
+<h4 id="preview">Preview</h4>
+
+<p>The preview tab displays how the form will look like.</p>
+
+<h4 id="data-access">Data Access</h4>
+
+<p>From this tab, it is possible to assign read/write access to the form data.</p>
+
+<h3 id="results">Results</h3>
+
+<p>Results of specific forms can be seen, edited or download as a CSV file when clicking on the “Results” button.</p>
+
+<p>The results page display each entry per attendee. Clicking on “View” will result in the display of the values obtained from the form. Users with write rights can edit that values.</p>
+
+<h2 id="badges">Badges</h2>
+
+<p>Badges are automatically generated by the system, new badges are generated every 24 hours. Badges re-generation can be forced.</p>
+
+<p>You can download all the badges at once, or edit a user’s profile to see the badge.</p>
+
+<h3 id="badge-editor">Badge editor</h3>
+
+<p>To access to the badge editor edit an existing badge from Attendees &gt; Badges model or  create a new one from Attendees &gt; New badge.</p>
+
+<p>The creation of badges is scripted, there are two ways to create/edit badges templates:</p>
+
+<ul>
+  <li>
+    <p>Manually writing the configuration file and uploading it to the server (requires an admin access).</p>
+  </li>
+  <li>
+    <p>Using the badge editor.</p>
+  </li>
+</ul>
+
+<h4 id="characteristics">Characteristics</h4>
+
+<p>The characteristics of the badge:</p>
+
+<ul>
+  <li>
+    <p>Name.</p>
+  </li>
+  <li>
+    <p>Background image.</p>
+  </li>
+  <li>
+    <p>Width and height of the badge canvas.</p>
+  </li>
+  <li>
+    <p>Background color.</p>
+  </li>
+</ul>
+
+<h4 id="conditions">Conditions</h4>
+
+<p>To know which badges must be generated for which user, the system uses “Conditions”. The conditions is a set of instructions that when true will trigger the generation of a badge.</p>
+
+<p>Profile, custom forms, and tickets can be used as conditions.</p>
+
+<p>You can also apply conditions to the fields.</p>
+
+<h4 id="fields">Fields</h4>
+
+<p>Fields are the elements that are going to be placed on the badge. Here is a table with the different available fields.</p>
+
+<p>All the fields use x,y coordinates. The top left corner of the picture being 0.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Values</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Avatar</td>
+      <td>Width/Height</td>
+      <td>Display the user’s avatar</td>
+    </tr>
+    <tr>
+      <td>Text</td>
+      <td>Width/Height/Field/Font/Font size/Color</td>
+      <td>Display a text from form/profile values</td>
+    </tr>
+    <tr>
+      <td>Text (auto-resize)</td>
+      <td>Width/Height/Field/Font/Font size/Color</td>
+      <td>Display a text from form/profile values. If the text box is too small, the text automatically fits in</td>
+    </tr>
+    <tr>
+      <td>Picture (form)</td>
+      <td>Width/Height/Field</td>
+      <td>Display a picture uploaded via the form</td>
+    </tr>
+    <tr>
+      <td>Picture (uploaded)</td>
+      <td>Width/Height/Field/Uploaded</td>
+      <td>Display a custom picture.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="download-badges">Download badges</h4>
+
+<p>To download the generated badges go to Attendees &gt; Download Badges.</p>
+
+<p>Before choosing the model to download, you can force the generation of all the badges of a specific model by pressing Force (re)generation. The forced (re)generation might take a while, do not close your browser in the meantime.</p>
+
+<p>The badges are download in a zip archive.</p>
+
+<h2 id="documents-models">Documents models</h2>
+
+<p>Documents models are documents generated on the fly, for example a pre-filled waiver. To access to the models go to Attendees &gt; Document model. To create a new one go to Attendees &gt; New model</p>
+
+<p>The generated documents are visible when you edit the user’s profile (in the Documents tab) or during checkin.</p>
+
+<p>Documents can use conditions to be generated in specific cases only.</p>
+
+<p>You can use markdown, html and special tags for the text.</p>
+
+<h4 id="preview-1">Preview</h4>
+
+<p>You can preview the document by clicking on the Preview button when you are in the Documents list. It uses then your personal data to fill in the tags.</p>
+
+<h1 id="booking">Booking</h1>
+
+<h2 id="booking-and-tickets">Booking and Tickets</h2>
+
+<p>This page displays all the different categories of tickets created on the system. To display it, go to Booking &gt; Bookings and Tickets.</p>
+
+<p>For the Rooms and the Seats, you can click on them and see the placement of the different spots.</p>
+
+<p>The meaning of the different columns are:</p>
+
+<ul>
+  <li>
+    <p><em>Name</em>. The name of the ticket.</p>
+  </li>
+  <li>
+    <p><em>Places</em>. The size of the room.</p>
+  </li>
+  <li>
+    <p><em>Total</em>. The total number of tickets of that kind (for bedrooms, divide the Total by Place to get the number of rooms).</p>
+  </li>
+  <li>
+    <p><em>Unassigned</em>. Spots taken from the pool of available spots, who have no attendee (regnumber) assigned to it.</p>
+  </li>
+  <li>
+    <p><em>Open (used/available)</em>. Spots with an assigned attendee, booked in the available pool of spots.</p>
+  </li>
+  <li>
+    <p><em>Canceled (used/total canceled)</em>. Canceled spots. Cannot be seen by the attendee from his profile</p>
+  </li>
+  <li>
+    <p><em>Hidden (used/total hidden)</em>. Hidden spots. Cannot be seen by the attendee from his profile</p>
+  </li>
+</ul>
+
+<h3 id="unassigned-spots">Unassigned spots</h3>
+
+<p>From that page you can also see the spots who have not been assigned to an attendee.</p>
+
+<h3 id="download-a-csv-with-the-bookings">Download a CSV with the bookings</h3>
+
+<p>This allows you to download a complete list of the bookings. It contains all the different spots taken, and also contains information like: who took it rm_regnumber - rm stands for regmaster - and who is assigned to it.</p>
+
+<p>Here is the list of information you will get from it:</p>
+
+<ul>
+  <li>
+    <p><em>Room</em>: room number if applicable (Room or Seat ticket).</p>
+  </li>
+  <li>
+    <p><em>Regnumber</em>: registration number of the attendee to which that spot has been assigned to.</p>
+  </li>
+  <li>
+    <p><em>Rm_regnumber</em>: the registration number of the attendee that owns the spot (in most cases the one who bought the spot).</p>
+  </li>
+  <li>
+    <p><em>Rbid</em>: internal unique id for that spot.</p>
+  </li>
+  <li>
+    <p><em>Pack</em>: the spots with the same pack number are grouped. This allows to quickly set the same regnumber for all the spots with the same pack number and rbid.</p>
+  </li>
+  <li>
+    <p><em>Type</em>: category of ticket (Room, Seat, Ticket or Goodie)</p>
+  </li>
+  <li>
+    <p><em>Name</em>: name of the ticket</p>
+  </li>
+  <li>
+    <p><em>Accepted</em>: indicates if the attendee that the master has assigned accepted (Y: yes; N: No).</p>
+  </li>
+  <li>
+    <p><em>Oid</em>: Order ID, the unique identifier for the invoice/quote to which that spot is linked to.</p>
+  </li>
+  <li>
+    <p><em>Checkin</em>: the check in state for that spot (I: checked in, N: not checked in yet or O: checked out).</p>
+  </li>
+  <li>
+    <p><em>Attributed to</em>: The attendee assigned to that spot.</p>
+  </li>
+  <li>
+    <p><em>Email</em>: his email address.</p>
+  </li>
+  <li>
+    <p><em>Owner</em>: The master/owner of that most.</p>
+  </li>
+  <li>
+    <p><em>Owner email</em>: his email address.</p>
+  </li>
+</ul>
+
+<!---## Rooms
+
+### Manage Rooms
+
+This page allows you to see all the rooms saved in the system, and to add, edit or delete rooms.
+
+WIP
+
+### Add a Room
+
+WIP
+
+
+## Goodies and Tickets
+
+### Manage goodies and Tickets
+
+WIP
+
+### Add Goodies and Tickets
+
+WIP-->
+
+<h1 id="orders">Orders</h1>
+
+<p>The orders are all the quotes and invoices stored on the system, an order is created automatically when the attendee lands on the checkout page or manually from the Attendee edition interface or directly from Orders &gt; New order.</p>
+
+<p>For legal reasons, orders can not be deleted.</p>
+
+<h2 id="orders-1">Orders</h2>
+
+<!-- ### New order
+
+WIP -->
+
+<h3 id="download-csv">Download CSV</h3>
+
+<p>Download a CSV file containing all the main information about all the created orders:</p>
+
+<ul>
+  <li>
+    <p>Oid: an unique identifier for the quote.</p>
+  </li>
+  <li>
+    <p>Paid: the amount paid for that quote.</p>
+  </li>
+  <li>
+    <p>Total: the total without vat for the quote.</p>
+  </li>
+  <li>
+    <p>Total_vat: the total with the VAT included.</p>
+  </li>
+  <li>
+    <p>Name: the name of the debtor.</p>
+  </li>
+  <li>
+    <p>Date: date of creation of the quote or invoice</p>
+  </li>
+  <li>
+    <p>State: the state of the order:</p>
+
+    <ul>
+      <li>
+        <p>quote.</p>
+      </li>
+      <li>
+        <p>quote_auto: an automatically generated quote</p>
+      </li>
+      <li>
+        <p>invoice.</p>
+      </li>
+      <li>
+        <p>deleted_quote: a quote that has been deleted.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Invoice: the unique invoice number (if the order is an invoice)</p>
+  </li>
+  <li>
+    <p>Generated: Y if a pdf has been generated.</p>
+  </li>
+  <li>
+    <p>x% exc: the sum on which the x% VAT rate will apply.</p>
+  </li>
+  <li>
+    <p>x% inc: the sum on which the x% VAT rate has been applied.</p>
+  </li>
+</ul>
+
+<h2 id="transactions">Transactions</h2>
+
+<p>Transactions represent announcements of payments, payments and refunds.</p>
+
+<h3 id="download-csv-1">Download CSV</h3>
+
+<p>Download all the transactions in a CSV file.</p>
+
+<h1 id="events">Events</h1>
+
+<p>There is an in-build event manager. Events can be displayed on the website, the dedicated page in Platy+, on the app, the kiosk screens…</p>
+
+<p>The attendee can also create his own personalized schedule by picking up the events he is going to attend. This allows some rough estimation of the attendance/interest for the event.</p>
+
+<!-- ###  Schedule an event
+
+WIP
+
+### Add an event
+
+WIP
+
+### Edit an event
+
+WIP
+
+### Add a localisation
+
+WIP
+
+### Edit a localisation
+
+WIP -->
+
+<h2 id="news">News</h2>
+
+<p>Platy+ includes an internationalised news system. It is also useful to transmit important but not critical information to the app.</p>
+
+<p>News have:</p>
+
+<ul>
+  <li>
+    <p><em>A title</em>.</p>
+  </li>
+  <li>
+    <p><em>Text</em>.</p>
+  </li>
+  <li>
+    <p><em>Creation date</em> (common between the different translations).</p>
+  </li>
+  <li>
+    <p><em>State</em>:</p>
+
+    <ul>
+      <li>
+        <p><em>Draft</em>: the news exists in the system but is not ready to be displayed on the website</p>
+      </li>
+      <li>
+        <p><em>Waiting for Preview</em>: the news is not displayed on the website, and is waiting to be proofread.</p>
+      </li>
+      <li>
+        <p><em>Published</em>: the news is displayed on the website.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><em>Languages</em>:</p>
+
+    <ul>
+      <li>The language in which to publish the post.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="add-a-piece-of-news">Add a piece of news</h3>
+
+<p>To create a new post, just go in News &gt; Add a post.</p>
+
+<p>The default language is already selected, but you can change it for whichever other languages you want to write the news in. Only the posts written for the selected languages will be displayed.</p>
+
+<!-- ### Edit a piece of news
+
+WIP -->
+
+<h2 id="mass-emails">Mass Emails</h2>
+
+<p>It is possible to schedule emails sendings. The system uses conditions and the groups to limit which users should get the mails</p>
+
+<p><strong>Warning: do not use it for advertising, unless the users have given their consent (RGPD).</strong></p>
+
+<h3 id="sending-an-email">Sending an email</h3>
+
+<p>To schedule a mail for mass sending, you will have to go to News &gt; Mass Emailing.</p>
+
+<p>From there a wizard will guide you step by step to schedule the mail.</p>
+
+<p>If no group is selected, then everyone will receive the mail.</p>
+
+<p>It is the same for the conditions, if none is chosen, there will be no filter from there.</p>
+
+<p>As for the documents, you can use html, tags and markdown.</p>
+
+<p>Note: the schedule date is in the following format YYYY-MM-DD (with YYYY being the year, MM the month and DD the days all in numerical form).</p>
+
+<h3 id="email-sending-conditions">Email sending conditions</h3>
+
+<p>Conditions configuration can be created and saved to be used and reused for each time mails have to be sent. It can be accessed from News &gt; Conditions, and can be created from News &gt; New conditions</p>
+
+<p>The conditions can use the profile data, tickets and forms in order to decide whether or not to send an email to a specific user.</p>
+
+<h3 id="email-models">Email models</h3>
+
+<p>Email Models are templates for the emails, they can be used as a way to emphasize the content or just make it look nicer.</p>
+
+<p>Existing models are available through News &gt; Models, and can be created from News &gt; New model.</p>
+
+<p>As for the documents, you can use html, tags and markdown.</p>
+
+<h3 id="scheduled-mails">Scheduled mails</h3>
+
+<p>It is possible to see the scheduled mails, and to cancel them or reset them. Go to News &gt; Scheduled mails.</p>
+
+<p>The page provide an overview of the sending date, the conditions used, the groups to which to mail it, the model used and the state.</p>
+
+<p>The different possible states are:</p>
+
+<ul>
+  <li>
+    <p>Idle: the mail sending has been scheduled, and will be sent on the requested day when * the mail sending job will be running (normally around 3:00 in the morning).</p>
+  </li>
+  <li>
+    <p>Cancelled: the mail sending has been cancelled.</p>
+  </li>
+  <li>
+    <p>Done: the mails have successfully been sent.</p>
+  </li>
+  <li>
+    <p>Error: an error happened while sending the mails.</p>
+  </li>
+</ul>
+
+<p>Deleting will end up in definitely removing the mail from the schedule.</p>
+
+<p>Clicking on the mail name will give you more information about that scheduled mail: a preview, sending date, conditions… and the users to which the emails have been sent.</p>
+
+<p>This will help you to diagnose if the conditions were working correctly.</p>
+
+<h2 id="system">System</h2>
+
+<h3 id="updates">Updates</h3>
+
+<p>Platy+ can be updated from System &gt; Update. For the moment the files have to be updated manually.</p>
+
+<h3 id="maintenance-modes">Maintenance modes</h3>
+
+<p>The system can display a maintenance page separately for the website part, the registration part or for both. This can be accessed from System &gt; Maintenance.</p>
+
+<p>In the screenshot, all the maintenance modes are deactivated.</p>
+
+<h3 id="version">Version</h3>
+
+<p>The page provides miscellaneous information about the registration system (version, changelog, licenses…).</p>
+
+<h3 id="translations">Translations</h3>
+
+<p>It is possible to provide translations for dynamic fields. Normally, the translations it is already accessible from the edition interfaces of the events, products, etc. But it is possible to find all the translations through System &gt; Localize.</p>
+
+<h1 id="attendees-interface">Attendee’s interface</h1>
+
+<p>The administrators and registration staff should get used to the attendee’s interface in order to provide them quick assistance.</p>
+
+<p>Here are the different functionalities the user has access to:</p>
+
+<ul>
+  <li>
+    <p>Custom forms from the profile.</p>
+  </li>
+  <li>
+    <p>Convention schedule and custom schedule.</p>
+  </li>
+  <li>
+    <p>Stats.</p>
+  </li>
+  <li>
+    <p>Attendees list.</p>
+  </li>
+</ul>
+
+<h2 id="profile">Profile</h2>
+
+<h3 id="changing-password">Changing password</h3>
+
+<p>The attendee can reset his password from the login page.</p>
+
+<p>Or he can change it from his profile</p>
+
+<h3 id="double-authentication">Double authentication</h3>
+
+<p>The attendee can activate double authentication from his profile. He will need for that an app like Google Authenticator.</p>
+
+<h1 id="how-to">How to</h1>
+
+<p>This part contains quick tutorials on more or less advanced uses of certain functionalities.</p>
+
+<!-- WIP -->
+
+<h2 id="attendees-1">Attendees</h2>
+
+<h3 id="cancel-an-invoice">Cancel an invoice</h3>
+
+<p>For legal reasons you can’t delete an already generated invoice, you will have then to create a negative invoice.</p>
+
+<ul>
+  <li>
+    <p>If you know the Order number or the Invoice number:</p>
+
+    <ul>
+      <li>Directly go to Orders &gt; Orders and from there click on the invoice you want to cancel.</li>
+    </ul>
+  </li>
+  <li>
+    <p>If you don’t know the number, but you know the user’s regnumber. You can access to it from the user’s edition page.</p>
+
+    <ul>
+      <li>
+        <p>Go to Attendees &gt; Attendees list.</p>
+      </li>
+      <li>
+        <p>Find the user and edit it.</p>
+      </li>
+      <li>
+        <p>Go on the Orders tab</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Once you are on the order you want to cancel, you can just hit the “remove” button for each line of the invoice (if you want to partially cancel an invoice, you hust have to hit the “remove” button for the specific lines you want to cancel).</p>
+
+<p>It will look like you are creating a new quote.</p>
+
+<p>Once you are done removing the products, hit the “Save and create a new quote” button on the top left of the page.</p>
+
+<p>From here you have quote cancelling the invoice. As it is a quote, you can still edit it (add/remove products).</p>
+
+<p>Once you have obtained what you wanted, you can hit the “Generate Invoice” button.</p>
+
+<p>Don’t forget to remove manually the bookings and tickets that you cancelled.</p>
+
+<p>Go back to the user’s edition page (you can click on his regnumber).</p>
+
+<p>Then go to the Ticket &amp; Bookings tab.</p>
+
+<p>For the payments and reimbursements, check with your head of registration on how to proceed.</p>
+
+<h3 id="create-a-user">Create a user</h3>
+
+<p>For on site registration, guests or for users having trouble you can directly create a new user.</p>
+
+<p>Go to Attendees &gt; Add a User.</p>
+
+<h3 id="generate-a-quote">Generate a quote</h3>
+
+<p>For products that are not accessible through the registration steps or for users who have troubles you can manually generate a quote.</p>
+
+<p>The user will see the quote from his Profile panel. Once he initiates payment, it is turned into an invoice.</p>
+
+<p>Check on the user’s profile in the “Bookings and tickets” tab if everything has been set correctly.</p>
+
+<h3 id="manually-create-an-invoice">Manually create an invoice</h3>
+
+<p>See first “Generate a quote”.</p>
+
+<p>Once a quote is created, you can generate an invoice.</p>
+
+<h3 id="delete-a-user">Delete a user</h3>
+
+<p>While it is very straightforward, some points should be carefully be taken into account.</p>
+
+<ul>
+  <li>
+    <p>Has the user an unpaid invoice?</p>
+
+    <ul>
+      <li>Maybe cancel the invoices, and check that the user payment balance is what it is expected to be.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Has the user still bookings/goodies/etc?</p>
+
+    <ul>
+      <li>
+        <p>You should remove any items that the user is never going to claim before deleting the user.</p>
+      </li>
+      <li>
+        <p>Also if a badge has been sent for printing don’t forget to remove it from the batch.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>The steps are:</p>
+
+<ul>
+  <li>
+    <p>Go to Attendees &gt; Attendees list.</p>
+  </li>
+  <li>
+    <p>Look for the user for which you want to delete the account. And edit that user</p>
+  </li>
+  <li>
+    <p>After all the verifications have been done go to the Delete Tab. Check “Delete the user” and hit “Delete”.</p>
+  </li>
+</ul>
+
+<p>What data is there left?</p>
+
+<ul>
+  <li>The user’s invoices and quotes are kept for legal reasons.</li>
+</ul>
+
+<!-- ## Products
+
+### Add a new product
+
+WIP. -->
+
+<h1 id="during-the-event">During the event</h1>
+
+<p>This chapter provides clues and information on how to set up the registration desk during the convention/event. And also how to prepare it properly to circumvent usual issues (fallbacks), and how to answer to more rare cases</p>
+
+<h2 id="tech-set-up">Tech set up</h2>
+
+<h3 id="setup-the-local-wifiethernet-network">Setup the local WiFi/Ethernet network</h3>
+
+<ul>
+  <li>Setup our network with our own routers. A local webserver should be running a copy of the website and ready to run in case of Internet connection failure (throught the hotel network or our 3G/4G backups).</li>
+</ul>
+
+<h3 id="setup-the-registration-desks">Setup the registration desks</h3>
+
+<ul>
+  <li>
+    <p>Laptops/Desktop computers connected to the hotel network and capable to reach our internal network.</p>
+  </li>
+  <li>
+    <p>Check connection to the shared printer.</p>
+  </li>
+  <li>
+    <p>Check connection with the badge printer.</p>
+  </li>
+  <li>
+    <p>If applicable, test the QR/barcode code reader.</p>
+
+    <ul>
+      <li>
+        <p>If it is not function try to install the drivers/restart the computer.</p>
+      </li>
+      <li>
+        <p>If QR/barcode code reader is out of use, do not worry the registration staff can manually enter the ticket code or find the attendee.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Let members of the registration team (and ConOps if they will server as backup) have a hand first on the check in. Check if everything goes well.</p>
+  </li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>Note: in some case, it might be wise to make an inventory at the end of the day of the keys/goodies/tickets that have been handled to the attendees.</p>
+
+<h3 id="there-is-no-internet-access">There is no Internet Access</h3>
+
+<ul>
+  <li>
+    <p>Communicate to the staff the lack of Internet Access and the team is working on it.</p>
+  </li>
+  <li>
+    <p>For the registration switch to the local web server until the end of the day.</p>
+
+    <ul>
+      <li>The Registration Team has a special procedure to follow.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Try to troubleshoot the connections issues.</p>
+  </li>
+  <li>
+    <p>If everything is fixed, and after the online web server has been updated:</p>
+
+    <ul>
+      <li>
+        <p><strong>Make a copy of the local web server database.</strong></p>
+      </li>
+      <li>
+        <p>Replace the database with the online web server copy.</p>
+      </li>
+      <li>
+        <p>Communicate to the other teams the problems are fixed.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="the-local-web-server-diesthe-wifiethernet-connection-fails">The local web server dies/the WiFi/Ethernet connection fails</h3>
+
+<ul>
+  <li>
+    <p>Ask the registration team to continue to register on the individual desktops through local files.</p>
+
+    <ul>
+      <li>The Registration Team has a special procedure to follow in that case.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Make a copy of each file on each desktop.</p>
+  </li>
+  <li>
+    <p>Help the registration team  to pool the data.</p>
+  </li>
+</ul>
+
+<h3 id="all-the-registration-computers-fail">All the registration computers fail</h3>
+
+<ul>
+  <li>
+    <p>Communicate with the registration team, tell them to switch back to paper and pens.</p>
+  </li>
+  <li>
+    <p>The Registration Team has a special procedure to follow in that case.</p>
+  </li>
+</ul>
+
+<h2 id="on-site-registration-desk">On site registration desk</h2>
+
+<h3 id="tips">Tips</h3>
+
+<p>One-two month before the convention:</p>
+
+<ul>
+  <li>
+    <p>Commission the badge designs (don’t forget to commission different design according to the tier of the attendee: Super-sponsor, sponsor, regular).</p>
+  </li>
+  <li>
+    <p>Order the sponsor gifts, lanyards, and bags</p>
+  </li>
+</ul>
+
+<p>Two weeks before the convention:</p>
+
+<ul>
+  <li>Send the list of attendees to the hotel, with the booked rooms and the allergies.</li>
+</ul>
+
+<h3 id="before-the-convention">Before the convention.</h3>
+
+<ul>
+  <li>
+    <p>Print the badges.</p>
+  </li>
+  <li>
+    <p>Cut the holes in the badges.</p>
+  </li>
+  <li>
+    <p>Order the badges by regnumber, separate each 10 badges with an index.</p>
+  </li>
+  <li>
+    <p>Prepare different set of bags.</p>
+
+    <ul>
+      <li>
+        <p>Normal:</p>
+      </li>
+      <li>
+        <p>A lanyard.</p>
+      </li>
+      <li>
+        <p>An erratum in case some of the information in the conbook incorrect..</p>
+      </li>
+      <li>
+        <p>The conbook.</p>
+      </li>
+      <li>
+        <p>Sponsor</p>
+
+        <ul>
+          <li>Same as normal plus sponsor gift.</li>
+        </ul>
+      </li>
+      <li>
+        <p>Do not put the shirts in the bags, keep them separated by size.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Save a CSV/ODS copy, print a paper copy of the Attendees. The copy should contain:</p>
+
+<ul>
+  <li>
+    <p>The regnumber.</p>
+  </li>
+  <li>
+    <p>The first and last name.</p>
+  </li>
+  <li>
+    <p>The nickname.</p>
+  </li>
+  <li>
+    <p>Ticket types. (which days, and which bedroom).</p>
+  </li>
+</ul>
+
+<h3 id="during-the-convention">During the convention</h3>
+
+<p>Estimated time: 1h.</p>
+
+<p>Set up the Pre-registered desk.</p>
+
+<p>There should be 1 pre-registered desk per 80/120 attendees.</p>
+
+<p>Version 1.a:</p>
+
+<ul>
+  <li>
+    <p>The bags must be behind the desks.</p>
+  </li>
+  <li>
+    <p>A sufficient number of liability waivers for the point a.</p>
+  </li>
+  <li>
+    <p>A computer with an Internet connection (and an electronic copy and paper copy of the attendees list in case of internet failure) at the point b.</p>
+
+    <ul>
+      <li>
+        <p>One person who checks the liablity waivers were correctly filled in.</p>
+      </li>
+      <li>
+        <p>One person doing the check in on the computer/printed documents.</p>
+      </li>
+      <li>
+        <p>One giving the badge. An extra person can handle the badges for one to three desks.</p>
+      </li>
+      <li>
+        <p>One person who handles the gifts and stuffed badges.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Version 1..b:</p>
+
+<ul>
+  <li>
+    <p>The bags, gifts and shirts must be behind the desks.</p>
+  </li>
+  <li>
+    <p>A printer (one/per three desks) that prints the liability waivers when someone registers.</p>
+  </li>
+  <li>
+    <p>A computer with Internet connection (and an electronic copy and paper copy of the attendees list in case of Internet failure) at the point a.</p>
+
+    <ul>
+      <li>
+        <p>One person who checks in and starts the printing of the waivers.</p>
+      </li>
+      <li>
+        <p>One person who gets the papers and the bags.</p>
+      </li>
+      <li>
+        <p>One person who handles the gifts and stuffed bags.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>NB: be able to switch to version 1.a in case of issues with the printed liability waivers (have a buffer of 10% of waivers printed, have material to print the new ones).</p>
+
+<p>Set up the Non-registered desk</p>
+
+<p>There should be a desk put apart for people who didn’t bought the badge or in case of issues with the registration:</p>
+
+<ul>
+  <li>
+    <p>A computer with internet connection.</p>
+  </li>
+  <li>
+    <p>A badge printer.</p>
+  </li>
+  <li>
+    <p>A regular printer.</p>
+  </li>
+  <li>
+    <p>An electronic payment point/cash box.</p>
+  </li>
+</ul>
+
+<p>Registered attendees:</p>
+
+<ul>
+  <li>
+    <p>Attendees should move into a unique flow:</p>
+
+    <ul>
+      <li>
+        <p>Liability waiver: the attendee should sign it first.</p>
+      </li>
+      <li>
+        <p>ID check and badge distribution: check the ID card (name and birthday).</p>
+      </li>
+      <li>
+        <p>Convention package.</p>
+      </li>
+      <li>
+        <p>T-shirt</p>
+      </li>
+      <li>
+        <p>Room key (if relevant).</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Non registered attendees</p>
+
+<ul>
+  <li>
+    <p>They can go directly to the non-registered desk.</p>
+  </li>
+  <li>
+    <p>Buy a ticket there, sign the liability waiver and get a badge.</p>
+  </li>
+  <li>
+    <p>Once registered, they can get back into the registered attendees line.</p>
+  </li>
+</ul>
+
+<h3 id="closing-of-the-registration">Closing of the registration</h3>
+
+<ul>
+  <li>
+    <p>Be careful that everything is packed and ordered correctly. Download a local copy of the attendees and/or make an offline backup of the attendees list.</p>
+  </li>
+  <li>
+    <p>Check there are enough liability waivers.</p>
+  </li>
+  <li>
+    <p>If the room can be closed by a key, leave the computers and the stuff in the room. Close correctly the room.</p>
+  </li>
+  <li>
+    <p>Count the money, write and date the last count. Bring the money to the accountant.</p>
+  </li>
+</ul>
+
+<h3 id="reopening">Reopening</h3>
+
+<p>1 hour before:</p>
+
+<ul>
+  <li>
+    <p>Check if there are new badges to print.</p>
+  </li>
+  <li>
+    <p>Print the badges, prepare the packages.</p>
+  </li>
+  <li>
+    <p>Do as during the opening.</p>
+  </li>
+</ul>
+
+<h2 id="troubleshooting-1">Troubleshooting</h2>
+
+<p>While Platy+ is getting used by more and more events, some bugs can happen and quick and proper answers should be brought to that situations to avoid data loss and attendees from waiting for too long.</p>
+
+<p>But the greatest risks are external issues (no Internet connection, server not reachable, etc). You will also find here answers to that situation.</p>
+
+			</div>
+		</div>
+	</main>
+		<footer class="footer mt-auto bg-dark">
+				<p>
+					Find the project on <a href="https://github.com/fluufff" title="See the project on GitHub"><img src="/assets/img/logo-GitHub.png" alt="GitHub" class="img-fluid" style="max-height: 1em;"></a>
+				</p>
+		</footer>
+	</body>
+</html>
+
